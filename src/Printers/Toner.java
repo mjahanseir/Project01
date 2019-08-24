@@ -2,16 +2,29 @@ package Printers;
 
 public class Toner {
     //attribute
+    private int tonerID;
     private int tonerLevel;
     private int pagePrinted;
     private boolean color;
     //Constructor
-    public Toner(int tonerLevel, int pagePrinted, boolean color) {
+
+    public Toner(int tonerID, int tonerLevel, int pagePrinted, boolean color) {
+        this.tonerID = tonerID;
         this.tonerLevel = tonerLevel;
         this.pagePrinted = pagePrinted;
         this.color = color;
     }
+
     //Setter and Getter
+
+    public int getTonerID() {
+        return tonerID;
+    }
+
+    public void setTonerID(int tonerID) {
+        this.tonerID = tonerID;
+    }
+
     public int getTonerLevel() {
         return tonerLevel;
     }
